@@ -1,0 +1,42 @@
+C:\Users\PingPingPhoto\Desktop\CPE_Y3S1\Database\LAB3\TCPServer\TCPServer\bin\Debug\TCPServer.exe.config
+C:\Users\PingPingPhoto\Desktop\CPE_Y3S1\Database\LAB3\TCPServer\TCPServer\bin\Debug\TCPServer.exe
+C:\Users\PingPingPhoto\Desktop\CPE_Y3S1\Database\LAB3\TCPServer\TCPServer\bin\Debug\TCPServer.pdb
+C:\Users\PingPingPhoto\Desktop\CPE_Y3S1\Database\LAB3\TCPServer\TCPServer\obj\Debug\TCPServer.csprojResolveAssemblyReference.cache
+C:\Users\PingPingPhoto\Desktop\CPE_Y3S1\Database\LAB3\TCPServer\TCPServer\obj\Debug\TCPServer.exe
+C:\Users\PingPingPhoto\Desktop\CPE_Y3S1\Database\LAB3\TCPServer\TCPServer\obj\Debug\TCPServer.pdb
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project\TCPServer\TCPServer\bin\Debug\TCPServer.exe.config
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project\TCPServer\TCPServer\obj\Debug\TCPServer.exe
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project\TCPServer\TCPServer\obj\Debug\TCPServer.pdb
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project\TCPServer\TCPServer\bin\Debug\TCPServer.exe
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project\TCPServer\TCPServer\bin\Debug\TCPServer.pdb
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project\TCPServer\TCPServer\obj\Debug\TCPServer.csprojResolveAssemblyReference.cache
+C:\Users\Book\Desktop\CPE341-Computer Network\Team Project\Network_Project\tcpserver\TCPServer\bin\Debug\TCPServer.exe.config
+C:\Users\Book\Desktop\CPE341-Computer Network\Team Project\Network_Project\tcpserver\TCPServer\obj\Debug\TCPServer.exe
+C:\Users\Book\Desktop\CPE341-Computer Network\Team Project\Network_Project\tcpserver\TCPServer\obj\Debug\TCPServer.pdb
+C:\Users\Book\Desktop\CPE341-Computer Network\Team Project\Network_Project\tcpserver\TCPServer\bin\Debug\TCPServer.exe
+C:\Users\Book\Desktop\CPE341-Computer Network\Team Project\Network_Project\tcpserver\TCPServer\bin\Debug\TCPServer.pdb
+C:\Users\Book\Desktop\CPE341-Computer Network\Team Project\Network_Project\tcpserver\TCPServer\obj\Debug\TCPServer.csprojResolveAssemblyReference.cache
+C:\Users\PingPingPhoto\Desktop\Book_Project\New folder\Network_Project\tcpserver\TCPServer\bin\Debug\TCPServer.exe.config
+C:\Users\PingPingPhoto\Desktop\Book_Project\New folder\Network_Project\tcpserver\TCPServer\obj\Debug\TCPServer.exe
+C:\Users\PingPingPhoto\Desktop\Book_Project\New folder\Network_Project\tcpserver\TCPServer\obj\Debug\TCPServer.pdb
+C:\Users\PingPingPhoto\Desktop\Book_Project\New folder\Network_Project\tcpserver\TCPServer\bin\Debug\TCPServer.exe
+C:\Users\PingPingPhoto\Desktop\Book_Project\New folder\Network_Project\tcpserver\TCPServer\bin\Debug\TCPServer.pdb
+C:\Users\PingPingPhoto\Desktop\Book_Project\New folder\Network_Project\tcpserver\TCPServer\obj\Debug\TCPServer.csprojResolveAssemblyReference.cache
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project2\tcpserver\TCPServer\bin\Debug\TCPServer.exe.config
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project2\tcpserver\TCPServer\obj\Debug\TCPServer.exe
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project2\tcpserver\TCPServer\obj\Debug\TCPServer.pdb
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project2\tcpserver\TCPServer\bin\Debug\TCPServer.exe
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project2\tcpserver\TCPServer\bin\Debug\TCPServer.pdb
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project2\tcpserver\TCPServer\obj\Debug\TCPServer.csprojResolveAssemblyReference.cache
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2\tcpserver\TCPServer\bin\Debug\TCPServer.exe.config
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2\tcpserver\TCPServer\obj\Debug\TCPServer.exe
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2\tcpserver\TCPServer\obj\Debug\TCPServer.pdb
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2\tcpserver\TCPServer\bin\Debug\TCPServer.exe
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2\tcpserver\TCPServer\bin\Debug\TCPServer.pdb
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2\tcpserver\TCPServer\obj\Debug\TCPServer.csprojResolveAssemblyReference.cache
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpserver\TCPServer\bin\Debug\TCPServer.exe.config
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpserver\TCPServer\obj\Debug\TCPServer.exe
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpserver\TCPServer\obj\Debug\TCPServer.pdb
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpserver\TCPServer\bin\Debug\TCPServer.exe
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpserver\TCPServer\bin\Debug\TCPServer.pdb
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpserver\TCPServer\obj\Debug\TCPServer.csprojResolveAssemblyReference.cache

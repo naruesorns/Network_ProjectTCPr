@@ -1,0 +1,42 @@
+C:\Users\PingPingPhoto\Desktop\CPE_Y3S1\Database\LAB3\TCPClient\TCPClient\bin\Debug\TCPClient.exe.config
+C:\Users\PingPingPhoto\Desktop\CPE_Y3S1\Database\LAB3\TCPClient\TCPClient\bin\Debug\TCPClient.exe
+C:\Users\PingPingPhoto\Desktop\CPE_Y3S1\Database\LAB3\TCPClient\TCPClient\bin\Debug\TCPClient.pdb
+C:\Users\PingPingPhoto\Desktop\CPE_Y3S1\Database\LAB3\TCPClient\TCPClient\obj\Debug\TCPClient.exe
+C:\Users\PingPingPhoto\Desktop\CPE_Y3S1\Database\LAB3\TCPClient\TCPClient\obj\Debug\TCPClient.pdb
+C:\Users\PingPingPhoto\Desktop\CPE_Y3S1\Database\LAB3\TCPClient\TCPClient\obj\Debug\TCPClient.csprojResolveAssemblyReference.cache
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project\TCPClient\TCPClient\bin\Debug\TCPClient.exe.config
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project\TCPClient\TCPClient\obj\Debug\TCPClient.exe
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project\TCPClient\TCPClient\obj\Debug\TCPClient.pdb
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project\TCPClient\TCPClient\bin\Debug\TCPClient.exe
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project\TCPClient\TCPClient\bin\Debug\TCPClient.pdb
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project\TCPClient\TCPClient\obj\Debug\TCPClient.csprojResolveAssemblyReference.cache
+C:\Users\Book\Desktop\CPE341-Computer Network\Team Project\Network_Project\tcpclient\TCPClient\bin\Debug\TCPClient.exe.config
+C:\Users\Book\Desktop\CPE341-Computer Network\Team Project\Network_Project\tcpclient\TCPClient\obj\Debug\TCPClient.exe
+C:\Users\Book\Desktop\CPE341-Computer Network\Team Project\Network_Project\tcpclient\TCPClient\obj\Debug\TCPClient.pdb
+C:\Users\Book\Desktop\CPE341-Computer Network\Team Project\Network_Project\tcpclient\TCPClient\bin\Debug\TCPClient.exe
+C:\Users\Book\Desktop\CPE341-Computer Network\Team Project\Network_Project\tcpclient\TCPClient\bin\Debug\TCPClient.pdb
+C:\Users\Book\Desktop\CPE341-Computer Network\Team Project\Network_Project\tcpclient\TCPClient\obj\Debug\TCPClient.csprojResolveAssemblyReference.cache
+C:\Users\PingPingPhoto\Desktop\Book_Project\New folder\Network_Project\tcpclient\TCPClient\bin\Debug\TCPClient.exe.config
+C:\Users\PingPingPhoto\Desktop\Book_Project\New folder\Network_Project\tcpclient\TCPClient\obj\Debug\TCPClient.exe
+C:\Users\PingPingPhoto\Desktop\Book_Project\New folder\Network_Project\tcpclient\TCPClient\obj\Debug\TCPClient.pdb
+C:\Users\PingPingPhoto\Desktop\Book_Project\New folder\Network_Project\tcpclient\TCPClient\bin\Debug\TCPClient.exe
+C:\Users\PingPingPhoto\Desktop\Book_Project\New folder\Network_Project\tcpclient\TCPClient\bin\Debug\TCPClient.pdb
+C:\Users\PingPingPhoto\Desktop\Book_Project\New folder\Network_Project\tcpclient\TCPClient\obj\Debug\TCPClient.csprojResolveAssemblyReference.cache
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project2\tcpclient\TCPClient\bin\Debug\TCPClient.exe.config
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project2\tcpclient\TCPClient\obj\Debug\TCPClient.exe
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project2\tcpclient\TCPClient\obj\Debug\TCPClient.pdb
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project2\tcpclient\TCPClient\bin\Debug\TCPClient.exe
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project2\tcpclient\TCPClient\bin\Debug\TCPClient.pdb
+C:\Users\PingPingPhoto\Dropbox\workY3S2\Network\Network_Project2\tcpclient\TCPClient\obj\Debug\TCPClient.csprojResolveAssemblyReference.cache
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2\tcpclient\TCPClient\bin\Debug\TCPClient.exe.config
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2\tcpclient\TCPClient\obj\Debug\TCPClient.exe
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2\tcpclient\TCPClient\obj\Debug\TCPClient.pdb
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2\tcpclient\TCPClient\bin\Debug\TCPClient.exe
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2\tcpclient\TCPClient\bin\Debug\TCPClient.pdb
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2\tcpclient\TCPClient\obj\Debug\TCPClient.csprojResolveAssemblyReference.cache
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpclient\TCPClient\bin\Debug\TCPClient.exe.config
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpclient\TCPClient\obj\Debug\TCPClient.exe
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpclient\TCPClient\obj\Debug\TCPClient.pdb
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpclient\TCPClient\bin\Debug\TCPClient.exe
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpclient\TCPClient\bin\Debug\TCPClient.pdb
+C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpclient\TCPClient\obj\Debug\TCPClient.csprojResolveAssemblyReference.cache
