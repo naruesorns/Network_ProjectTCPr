@@ -94,19 +94,29 @@ namespace TCPClient
                             /*string[] localFiles = Directory.GetFiles("C:\\Users\\PingPingPhoto\\Desktop\\CPE_Y3S1\\Database\\LAB3\\TCPClient")
                                              .Select(path => Path.GetFileName(path))
                                              .ToArray();*/
-                            string[] localFiles = Directory.GetFiles(Environment.CurrentDirectory)
+                            /*string[] localFiles = Directory.GetFiles(Environment.CurrentDirectory)
                                              .Select(path => Path.GetFileName(path))
-                                             .ToArray();
+                                             .ToArray();*/
+
                             //string[] localFilePaths = Directory.GetFiles(@"C:\Users\PingPingPhoto\Desktop\CPE_Y3S1\Database\LAB3\TCPClient");
                             //Console.WriteLine("--- Files: ---");
                             int i = 1;
                             Console.WriteLine(">>>> -------------------------");
                             Console.WriteLine(">>>> LIST FILE IN LOCAL CLIENT");
-                            foreach (string name in localFiles)
+                            /*foreach (string name in localFiles)
                             {
                                 Console.WriteLine(">>>>>> {0}. {1}", i, name);
                                 i++;
+                            }*/
+                            DirectoryInfo di = new DirectoryInfo(Environment.CurrentDirectory);
+                            FileInfo[] fiArr = di.GetFiles();
+                            Console.WriteLine(">>>> {0,-30} {1,15:1}", "fileName", "size");
+                            foreach (FileInfo f in fiArr)
+                            {
+                                Console.WriteLine(">>>> {0,-30} {1,15:N0} bytes", f.Name, f.Length);
+                            i++;
                             }
+    
                         }
 
                         else if (readText.CompareTo(ls) == 0)
@@ -125,18 +135,22 @@ namespace TCPClient
                             string readMessage2 = clientRead.ReadLine();
                             Console.WriteLine(">>>>>> Array list size: " + readMessage2); //Second receive message from server - list size
                             int length = Convert.ToInt32(readMessage2);
-                            string[] fileList = new string[length];
-
+                            string[] fileName = new string[length];
+                            string[] fileSize = new string[length];
+                            Console.WriteLine(">>>> {0,-30} {1,15:1}", "fileName", "size");
                             for (int i = 0; i < length; i++)
                             {
-                                fileList[i] = clientRead.ReadLine();
-                                Console.WriteLine(">>>>>> {0}. {1}", i + 1, fileList[i]);
+                                fileName[i] = clientRead.ReadLine();
+                                fileSize[i] = clientRead.ReadLine();
+                                int size = Int32.Parse(fileSize[i]);
+                                //Console.WriteLine(">>>>>> {0}. {1}", i + 1, fileList[i]);
+                                Console.WriteLine(">>>> {0,-30} {1,15:N0} bytes", fileName[i], size);
                             }
 
                             string status = clientRead.ReadLine();
                             if (status == "success")
                             {
-                                Console.WriteLine("============================");
+                                Console.WriteLine(">>>> ============================");
                             }
                         }
 
@@ -148,71 +162,79 @@ namespace TCPClient
                             Console.WriteLine(">>>> -------------------------------------");
                             Console.Write(">>>>>>> Please enter file name : ");
                             string fileName = Console.ReadLine();
-
-                            fullPath = Path.GetFullPath(fileName);
-
-                            if (File.Exists(fullPath))
+                            if (string.IsNullOrEmpty(fileName))
                             {
-                                sWriter.WriteLine(uf); //request for upload file to server
-                                sWriter.Flush();
-
-                                byte[] bytes = File.ReadAllBytes(fullPath);
-                                byte[] myWriteBuffer = File.ReadAllBytes(fullPath);
-                                //file size
-                                Console.WriteLine(">>>>>> file size : {0}", bytes.Length.ToString());
-                                sWriter.WriteLine(bytes.Length.ToString());
-                                sWriter.Flush();
-
-                                //file name
-                                Console.WriteLine(">>>>>> file name : {0}", fileName);
-                                sWriter.WriteLine(fileName);
-                                sWriter.Flush();
-
-                                Console.WriteLine(">>>>>> Upload file");
-                                //tcpClient.Client.SendFile(fullPath);
-
-                                int remaining = myWriteBuffer.Length;
-                                int blocksize = 1024;
-                                int sendFileLength = myWriteBuffer.Length;
-                                int offset = 0;
-                                Stopwatch sw = Stopwatch.StartNew();
-                                string uploadState = clientRead.ReadLine();
-
-                                if (uploadState == "ready")
-                                {
-                                    while (offset < sendFileLength)
-                                    {
-                                        remaining = sendFileLength - offset;
-                                        if (remaining < blocksize)
-                                        {
-                                            blocksize = remaining;
-                                        }
-                                        tcpClient.GetStream().Write(myWriteBuffer, offset, blocksize);
-                                        drawTextProgressBar(offset, sendFileLength);
-                                        offset += blocksize;
-                                        //Console.WriteLine("{0} . {1} . {2}", myWriteBuffer.Length, offset, blocksize);
-
-                                    }
-                                    sw.Stop();
-
-                                    uploadState = clientRead.ReadLine();
-                                    Console.WriteLine(uploadState);
-                                    if (uploadState == "success")
-                                    {
-                                        Console.WriteLine();
-                                        Console.WriteLine("UPLOAD SUCCESS");
-                                        Console.WriteLine(">>>> -------------------------------------");
-                                        Console.WriteLine(">>>>>> Time take: {0} ms", sw.Elapsed.TotalMilliseconds);
-                                        Console.WriteLine(">>>> -------------------------------------");
-                                    }
-                                }
-
+                                Console.WriteLine(">>>> back to Mode Selection");
                             }
                             else
                             {
-                                Console.WriteLine(">>>> ------------------------------------");
-                                Console.WriteLine(">>>> ----- Error : File does not exist");
+                                fullPath = Path.GetFullPath(fileName);
 
+                                if (File.Exists(fullPath))
+                                {
+                                    sWriter.WriteLine(uf); //request for upload file to server
+                                    sWriter.Flush();
+
+                                    byte[] bytes = File.ReadAllBytes(fullPath);
+                                    byte[] myWriteBuffer = File.ReadAllBytes(fullPath);
+                                    //file size
+                                    Console.WriteLine(">>>>>> file size : {0}", bytes.Length.ToString());
+                                    sWriter.WriteLine(bytes.Length.ToString());
+                                    sWriter.Flush();
+
+                                    //file name
+                                    Console.WriteLine(">>>>>> file name : {0}", fileName);
+                                    sWriter.WriteLine(fileName);
+                                    sWriter.Flush();
+
+                                    Console.WriteLine(">>>>>> Upload file");
+                                    //tcpClient.Client.SendFile(fullPath);
+
+                                    int remaining = myWriteBuffer.Length;
+                                    int blocksize = 1024;
+                                    int sendFileLength = myWriteBuffer.Length;
+                                    int offset = 0;
+                                    Stopwatch sw = Stopwatch.StartNew();
+                                    string uploadState = clientRead.ReadLine();
+
+                                    if (uploadState == "ready")
+                                    {
+                                        while (offset < sendFileLength)
+                                        {
+                                            remaining = sendFileLength - offset;
+                                            if (remaining < blocksize)
+                                            {
+                                                blocksize = remaining;
+                                            }
+                                            tcpClient.GetStream().Write(myWriteBuffer, offset, blocksize);
+                                            drawTextProgressBar(offset, sendFileLength);
+                                            offset += blocksize;
+                                            //Console.WriteLine("{0} . {1} . {2}", myWriteBuffer.Length, offset, blocksize);
+
+                                        }
+                                        sw.Stop();
+
+                                        uploadState = clientRead.ReadLine();
+                                        Console.WriteLine(uploadState);
+                                        if (uploadState == "success")
+                                        {
+                                            Console.WriteLine();
+                                            Console.WriteLine("UPLOAD SUCCESS");
+                                            Console.WriteLine(">>>> -------------------------------------");
+                                            Console.WriteLine(">>>>>> Time take: {0} sec", sw.Elapsed.TotalSeconds);
+                                            double throughput = (sendFileLength / 1024) / sw.Elapsed.TotalSeconds;
+                                            Console.WriteLine(">>>>>> Throughput : {0:F} Kb/s", throughput);
+                                            Console.WriteLine(">>>> -------------------------------------");
+                                        }
+                                    }
+
+                                }
+                                else
+                                {
+                                    Console.WriteLine(">>>> ------------------------------------");
+                                    Console.WriteLine(">>>> ----- Error : File does not exist");
+
+                                }
                             }
                             /*
                         catch (Exception e)
@@ -316,7 +338,9 @@ namespace TCPClient
                                     {
                                         Console.WriteLine();
                                         Console.WriteLine(">>>> -------------------------------------");
-                                        Console.WriteLine(">>>>>> Time take: {0} ms", sw.Elapsed.TotalMilliseconds);
+                                        Console.WriteLine(">>>>>> Time take: {0} seccond", sw.Elapsed.TotalSeconds);
+                                        double throughput = (downloadFileLength /1024)/sw.Elapsed.TotalSeconds;
+                                        Console.WriteLine(">>>>>> Throughput : {0:F} Kb/s", throughput);
                                         Console.WriteLine(">>>> -------------------------------------");
                                         // Save the file using the filename sent by the client
                                         Console.WriteLine(">>>>>> File received and saved in " + Environment.CurrentDirectory);

@@ -87,15 +87,33 @@ namespace TCPServer
                         writer.WriteLine(serverResponse);
                         writer.Flush();
 
+                        DirectoryInfo di = new DirectoryInfo(Environment.CurrentDirectory);
+                        FileInfo[] fiArr = di.GetFiles();
+
                         //send 2nd message - list length
-                        writer.WriteLine(remoteFileList.Length.ToString());
+                        writer.WriteLine(fiArr.Length);
                         writer.Flush();
 
-                        foreach (string name in remoteFileList)
+                        //send 2nd message - list length
+                        //writer.WriteLine(remoteFileList.Length.ToString());
+                        //writer.Flush();
+
+                        foreach (FileInfo f in fiArr)
+                        {
+                            writer.WriteLine(f.Name);
+                            writer.Flush();
+
+                            writer.WriteLine(f.Length);
+                            writer.Flush();
+
+                        }
+    
+                        /*foreach (string name in remoteFileList)
                         {
                             writer.WriteLine(name);
                             writer.Flush();
-                        }
+                            //writer.WriteLine();
+                        }*/
                         writer.WriteLine("success");
                         writer.Flush();
 
