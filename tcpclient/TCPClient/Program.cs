@@ -45,6 +45,48 @@ namespace TCPClient
             Console.Write(progress.ToString() + " of " + total.ToString() + "    "); //blanks at the end remove any excess
         }
 
+        public static bool IsConnected(TcpClient _tcpClient)
+        {
+            try
+            {
+                if (_tcpClient != null && _tcpClient.Client != null && _tcpClient.Client.Connected)
+                {
+                    /* pear to the documentation on Poll:
+                        * When passing SelectMode.SelectRead as a parameter to the Poll method it will return 
+                        * -either- true if Socket.Listen(Int32) has been called and a connection is pending;
+                        * -or- true if data is available for reading; 
+                        * -or- true if the connection has been closed, reset, or terminated; 
+                        * otherwise, returns false
+                        */
+
+                    // Detect if client disconnected
+                    if (_tcpClient.Client.Poll(0, SelectMode.SelectRead))
+                    {
+                        byte[] buff = new byte[1];
+                        if (_tcpClient.Client.Receive(buff, SocketFlags.Peek) == 0)
+                        {
+                            // Client disconnected
+                            return false;
+                        }
+                        else
+                        {
+                            return true;
+                        }
+                    }
+
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
 
         static void Main(string[] args)
         {
@@ -61,19 +103,43 @@ namespace TCPClient
             if ((readconnect.CompareTo("Y") == 0) || (readconnect.CompareTo("y") == 0))
             {
 
-                TcpClient tcpClient = new TcpClient("192.168.1.40", 8888);
+                //TcpClient tcpClient = new TcpClient("192.168.1.40", 8888);
 
                 //TcpClient tcpClient = new TcpClient("127.0.0.1", 8888);
                 //System.Net.Sockets.TcpClient clientSocket = new System.Net.Sockets.TcpClient();
 
-                Console.WriteLine(">>>> Client Started");
+                //Console.WriteLine(">>>> Client Started");
                 string readText;
                 string ls = "ls", lls = "lls", uf = "put", df = "get", exit = "exit";
 
+                //Console.Write(">>>> Enter IP Address :");
+                //string serverIP;
+                //TcpClient tcpClient = null;
+                TcpClient tcpClient = null;
+                /*if (IsConnected(tcpClient) == false)
+                {
+                    
+                    Console.Write(">>>> Enter IP Address :");
+                    string serverIP = Console.ReadLine();
+                    tcpClient = new TcpClient(serverIP, 8888);
+                }*/
                 while ((true))
                 {
                     try
                     {
+                        if (IsConnected(tcpClient) == false)
+                        {
+
+                            Console.Write(">>>> Enter IP Address :");
+                            string serverIP = Console.ReadLine();
+                            tcpClient = new TcpClient(serverIP, 8888);
+                        }
+                        //Console.Write(">>>> Enter IP Address :");
+                        //serverIP = Console.ReadLine();
+                        //tcpClient = new TcpClient("192.168.1.40", 8888);
+                        //TcpClient tcpClient = new TcpClient(serverIP, 8888);
+                        //tcpClient = new TcpClient(serverIP, 8888);
+                        Console.WriteLine(">>>> Client Started");
 
                         StreamWriter sWriter = new StreamWriter(tcpClient.GetStream());
                         StreamReader clientRead = new StreamReader(tcpClient.GetStream());
@@ -236,12 +302,6 @@ namespace TCPClient
 
                                 }
                             }
-                            /*
-                        catch (Exception e)
-                        {
-                            Console.Write(e.Message);
-                        }
-                             */
                         }
                         else if (readText.CompareTo(exit) == 0)
                         {
@@ -352,16 +412,37 @@ namespace TCPClient
                         }
                         else
                         {
-                            Console.WriteLine(">>>> -----------------");
-                            Console.WriteLine(">>>> ---- Error : unknow opperation");
-                            Console.WriteLine(">>>> -----------------");
+                            if (IsConnected(tcpClient) == false)
+                            {
+                                Console.WriteLine(">>>> ------------------------------");
+                                Console.WriteLine(">>>> ---- No connection");
+                                Console.WriteLine(">>>> ---- Disconnect from server");
+                                Console.WriteLine(">>>> ------------------------------");
+                            }
+                            else
+                            {
+                                Console.WriteLine(">>>> ------------------------------");
+                                Console.WriteLine(">>>> ---- Error : unknow opperation");
+                                Console.WriteLine(">>>> ------------------------------");
+                            }
+
                         }
 
                     }
-                    catch (IOException)
+                    catch (IOException e)
                     {
-                        Console.WriteLine("Disconect from server");
+                        Console.WriteLine(">>>> ------------------------------");
+                        Console.WriteLine(">>>> error : " + e.Message);
+                        Console.WriteLine(">>>>> Disconect from server");
+                        Console.WriteLine(">>>> ------------------------------");
                         //should return to ask to join server
+                    }
+                    catch (SocketException e)
+                    {
+                        Console.WriteLine(">>>> ------------------------------");
+                        Console.WriteLine(">>>> error : " + e.Message);
+                        Console.WriteLine(">>>> Disconnect from server");
+                        Console.WriteLine(">>>> ------------------------------");
                     }
                 }
             }

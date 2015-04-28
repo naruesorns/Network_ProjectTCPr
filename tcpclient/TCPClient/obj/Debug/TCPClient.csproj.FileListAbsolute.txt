@@ -40,3 +40,9 @@ C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpclient\TCPC
 C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpclient\TCPClient\bin\Debug\TCPClient.exe
 C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpclient\TCPClient\bin\Debug\TCPClient.pdb
 C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpclient\TCPClient\obj\Debug\TCPClient.csprojResolveAssemblyReference.cache
+C:\Users\PingPingPhoto\Documents\GitHub\Network_ProjectTCP\tcpclient\TCPClient\bin\Debug\TCPClient.exe.config
+C:\Users\PingPingPhoto\Documents\GitHub\Network_ProjectTCP\tcpclient\TCPClient\obj\Debug\TCPClient.exe
+C:\Users\PingPingPhoto\Documents\GitHub\Network_ProjectTCP\tcpclient\TCPClient\obj\Debug\TCPClient.pdb
+C:\Users\PingPingPhoto\Documents\GitHub\Network_ProjectTCP\tcpclient\TCPClient\bin\Debug\TCPClient.exe
+C:\Users\PingPingPhoto\Documents\GitHub\Network_ProjectTCP\tcpclient\TCPClient\bin\Debug\TCPClient.pdb
+C:\Users\PingPingPhoto\Documents\GitHub\Network_ProjectTCP\tcpclient\TCPClient\obj\Debug\TCPClient.csprojResolveAssemblyReference.cache

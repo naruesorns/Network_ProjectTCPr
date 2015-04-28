@@ -40,3 +40,6 @@ C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpserver\TCPS
 C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpserver\TCPServer\bin\Debug\TCPServer.exe
 C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpserver\TCPServer\bin\Debug\TCPServer.pdb
 C:\Users\PingPingPhoto\Desktop\Book_Project\Network_Project2_WORK\tcpserver\TCPServer\obj\Debug\TCPServer.csprojResolveAssemblyReference.cache
+C:\Users\PingPingPhoto\Documents\GitHub\Network_ProjectTCP\tcpserver\TCPServer\bin\Debug\TCPServer.exe.config
+C:\Users\PingPingPhoto\Documents\GitHub\Network_ProjectTCP\tcpserver\TCPServer\obj\Debug\TCPServer.exe
+C:\Users\PingPingPhoto\Documents\GitHub\Network_ProjectTCP\tcpserver\TCPServer\obj\Debug\TCPServer.pdb
