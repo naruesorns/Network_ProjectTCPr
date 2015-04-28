@@ -1,0 +1,6 @@
+/Users/macair/Desktop/Network_ProjectTCPr/tcpserver/TCPServer/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/macair/Desktop/Network_ProjectTCPr/tcpserver/TCPServer/bin/Debug/TCPServer.exe.config
+/Users/macair/Desktop/Network_ProjectTCPr/tcpserver/TCPServer/bin/Debug/TCPServer.exe.mdb
+/Users/macair/Desktop/Network_ProjectTCPr/tcpserver/TCPServer/bin/Debug/TCPServer.exe
+/Users/macair/Desktop/Network_ProjectTCPr/tcpserver/TCPServer/obj/Debug/TCPServer.exe
+/Users/macair/Desktop/Network_ProjectTCPr/tcpserver/TCPServer/obj/Debug/TCPServer.exe.mdb
